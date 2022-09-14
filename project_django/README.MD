@@ -25,8 +25,21 @@ Ya, tanpa menggunakan virtualenv, kita tetap dapat membuat aplikasi web berbasis
 Poin Pertama
 1. Membuat repositori baru agar dapat di kloning ke perangkat saya untuk dapat menggunakan template yang telah disediakan. Repositori tersebut saya namakan Tugas-2---Audrey.
 2. Membuka folder yang telah berhasil saya kloning melalui VSCode dan mengerjakannya sesuai perintah. 
-3. Menjalankan perintah python manage.py makemigrations untuk mempersiapkan migrasi skema model ke dalam database Django lokal dan perintah python manage.py migrate untuk menerapkan skema model yang telah dibuat ke dalam database Django lokal. Lalu, menjalankan perintah python manage.py loaddata initial_wishlist_data.json agar  data tersebut masuk ke dalam database Django lokal.
+3. Menjalankan perintah 
+```shell 
+python manage.py makemigrations 
+``` 
+untuk mempersiapkan migrasi skema model ke dalam database Django lokal dan perintah 
+```shell 
+python manage.py migrate 
+``` 
+untuk menerapkan skema model yang telah dibuat ke dalam database Django lokal. Lalu, menjalankan perintah 
+```shell
+python manage.py loaddata initial_wishlist_data.json 
+```
+agar  data tersebut masuk ke dalam database Django lokal.
 4. Membuat sebuah fungsi yang menerima parameter _request_ dan mengembalikan _render_ dengan cara menambahkan kode berikut ke dalam views.py yang ada pada folder katalog:
+
 ```python
 def show_katalog(request):
     return render(request, "katalog.html", context)
@@ -47,7 +60,11 @@ urlpatterns = [
 ```python
 path('katalog/', include('katalog.urls')),
 ```
-3. Menjalankan python manage.py _runserver_ di terminal untuk menjalankan proyek Django tersebut.
+3. Menjalankan 
+```shell
+python manage.py _runserver_ 
+```
+di terminal untuk menjalankan proyek Django tersebut.
 
 Poin Ketiga
 1. Mencari variabel-variabel yang harus di isi sesuai dengan diri sendiri.
