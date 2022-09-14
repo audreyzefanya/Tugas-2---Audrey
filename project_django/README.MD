@@ -1,3 +1,8 @@
+
+# Link Deploy
+https://pbp-tugas2-audrey.herokuapp.com/katalog/
+
+
 # Bagan Request Client ke Web Aplikasi Berbasis Django
 Di bawah ini merupakan bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya.
 ![Bagan_Audrey](/Bagan_Audrey.png)
