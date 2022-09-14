@@ -79,3 +79,10 @@ Poin Keempat
 1. Melakukan _add-commit-push_.
 2. Copy API key akun Heroku milik saya lalu memasukannya ke _secrets_ di Github.
 3. _Rerun workflow_.
+
+# Resources
+MTV Django Architecture PPT on SCELE
+https://linuxhostsupport.com/blog/why-using-a-python-virtual-environment-is-a-good-choice/
+https://www.youtube.com/watch?v=iCPWpxz_3kk
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page
+https://www.researchgate.net/publication/297264757_Simulation_data_exchange_-_web_interface_for_CostGlue_application
