@@ -1,0 +1,114 @@
+[
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":1,
+        "fields":{
+            "watched":"Yes",
+            "title":"One Direction: This Is Us",
+            "rating": "5/5",
+            "release_date": "2013",
+            "review": "Packed with nonstop energy and cheeky good fun!"
+        }   
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":2,
+        "fields":{
+            "watched":"No",
+            "title":"Sayap-Sayap Patah",
+            "rating": "4.5/5",
+            "release_date": "2022",
+            "review": "a film that has a fresh story, shows the life of Densus 88 which has never been shot before. "
+        }
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":3,
+        "fields":{
+            "watched":"Yes",
+            "title":"Love, Rosie",
+            "rating": "4.6/5",
+            "release_date": "2014",
+            "review": "The best rom coms out there. Both the main actors have amazing chemistry."
+        }
+    },
+    { 
+        "model":"mywatchlist.barangwatchlist",
+        "pk":4,
+        "fields":{
+            "watched":"Yes",
+            "title":"Mean Girls",
+            "rating": "4.6/5",
+            "release_date": "2004",
+            "review": "I may not be those 2000s american teens, but I could tell you this movie is captured reality and some relatable moments as a highschooler."
+        
+        }
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":5,
+        "fields":{
+            "watched":"Yes",
+            "title":"Love, Simon",
+            "rating": "4.7/5",
+            "release_date": "2018",
+            "review": "a great coming of age/romance movie and it really made me think differently on things."
+        }
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":6,
+        "fields":{
+            "watched":"Yes",
+            "title":"The Conjuring",
+            "rating": "4.7/5",
+            "release_date": "2013",
+            "review": "Completes a modern supernatural horror film."
+        }
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":7,
+        "fields":{
+            "watched":"Yes",
+            "title":"Pengabdi Setan",
+            "rating": "4.1/5",
+            "release_date": "2017",
+            "review": "an underrated Asian horror gem. The plot is not new but the way it's executed makes it look fresh. "
+        }
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":8,
+        "fields":{
+            "watched":"No",
+            "title":"Spiderman : No Way Home",
+            "rating": "4.7/5",
+            "release_date": "2021",
+            "review": "a masterpiece. It tells an amazing origin story about Peter Parker and how he became everyone's favorite Wall-Crawler. "
+        }
+    
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":9,
+        "fields":{
+            "watched":"Yes",
+            "title":"Pengabdi Setan 2 : Communion",
+            "rating": "4.5/5",
+            "release_date": "2022",
+            "review": "a more gripping sequel than the first film. Brings a complete package of haunted experiences."
+        }
+    },
+    {
+        "model":"mywatchlist.barangwatchlist",
+        "pk":10,
+        "fields":{
+            "watched":"Yes",
+            "title":"The Orphanage",
+            "rating": "4.3/5",
+            "release_date": "2007",
+            "review": "Absolutely brilliant film from start to finish. The main lady is superb."
+        }
+    }
+]
