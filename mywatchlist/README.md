@@ -3,7 +3,7 @@ JSON, XML serta HTML memiliki beberapa perbedaan. Perbedaan tersebut dapat dilih
 ![tabel_perbedaan](/tabel_perbedaan.jpg)
 
 # Mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
-Karena dalam kesatuan platform, pertukaran data user dengan data yang ada di server pasti terjadi. Data delivery mempermudah kita untuk melakukan pertukaran data. Pertukaran (kirim dan menerima) data bisanya menggunakan format JSON, XML, ataupun HTML agar data yang dik kirim dapat diterima dengan baik oleh user serta mudah dipahami.
+Dalam mengembangkan suatu platform, kita perlu mengirimkan data dari satu stack ke stack lainnya. Data delivery mempermudah kita untuk melakukan pertukaran data. Pertukaran (kirim dan menerima) data bisanya menggunakan format JSON, XML, ataupun HTML agar data yang dikirim dapat diterima dengan baik.
 
 
 
