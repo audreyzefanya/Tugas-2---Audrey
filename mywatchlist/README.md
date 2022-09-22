@@ -47,3 +47,15 @@ untuk memasukkan data tersebut ke dalam database Django lokal.
 9. Add, commit, dan push perubahan.
 
 # Mengakses 3 URL menggunakan Postman
+
+HTML
+![Postman_HTML](/Postman_HTML.png)
+
+XML
+![Postman_XML](/Postman_XML.png)
+
+JSON
+![Postman_JSON](/Postman_JSON.png)
+
+# Link deployment
+https://pbp-tugas2-audrey.herokuapp.com/mywatchlist/
