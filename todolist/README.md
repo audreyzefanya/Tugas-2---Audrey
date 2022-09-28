@@ -1,5 +1,5 @@
 # Deployment Link
-
+https://pbp-tugas2-audrey.herokuapp.com/todolist
 
 # Kegunaan {% csrf_token %} Pada Elemen, Apa Yang Terjadi Jika Tidak Ada Kode Tersebut?
 `{% csrf_token %}` merupakan perintah yang dapat menjalankan token secara acak setiap halaman form muncul. `{% csrf_token %}` dapat mencegah serangan CSRF dengan membuat penyerang tidak mungkin membuat permintaan HTTP yang sepenuhnya valid, dengan begitu, penyerang tidak dapat memprediksi berapa nilai token CSRF _user_ dan membuat permintaan dengan semua parameter yang diperlukan aplikasi untuk memenuhi permintaan tersebut.
