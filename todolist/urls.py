@@ -13,5 +13,4 @@ urlpatterns = [
     path('login/', login_user, name='login_user'),
     path('logout/', logout_user, name='logout_user'),
     path('createtask/', create_task, name='create_task'),
-
 ]

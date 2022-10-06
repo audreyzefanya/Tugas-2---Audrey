@@ -4,7 +4,6 @@ from mywatchlist.views import show_XML
 from mywatchlist.views import show_json
 from mywatchlist.views import show_movielink
 
-
 app_name = 'mywatchlist'
 
 urlpatterns = [

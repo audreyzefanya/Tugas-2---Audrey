@@ -1,30 +1,64 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-<title>Account Registration</title>
+<title>Sign Up Account</title>
 {% endblock meta %}
 
 {% block content %}  
 
-<style>
-    table, button{ margin: auto;}
-    h1{text-align: center;}
-    div {text-align: center;}
-</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class = "login">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://cdn.dribbble.com/users/402090/screenshots/7972050/media/6dbbc85389e40707b39435357452fe27.gif);
+        }
+        .btn{
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(253, 255, 148);
+            color: black;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background: rgb(0, 0, 0);
+            border: 1px solid;
+            color: white;
+        }
+    </style>
+
+<div class = "sign up">
     
-    <h1>Registration Form</h1>  
+    <section class="Form my-5 mx-5">
+        <div class="container">
+                <div class="col-lg-6 px-5 pt-5">
+                    <h1 class="font-weight-bold py-3">Sign Up</h1>
+                    <h4>Let's sign up your account here!</h4>
+                    <br> 
 
         <form method="POST" >  
             {% csrf_token %}  
-            <table>  
                 {{ form.as_table }}  
                 <tr>  
                     <td></td>
-                    <td><input type="submit" name="submit" value="Sign Up"/></td>  
+                    <td><input class="btn btn-outline-primary" type="submit" name="submit" value="Sign Up"/></td>  
                 </tr>  
-            </table>  
         </form>
 
     {% if messages %}  
@@ -34,6 +68,7 @@
                 {% endfor %}  
         </ul>   
     {% endif %}
+    
 
 </div>  
 

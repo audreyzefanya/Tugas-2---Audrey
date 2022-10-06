@@ -1,34 +1,93 @@
 {% extends 'base.html' %}
-{% block content %}  
+{% block meta %}
+<title>To-do List</title>
+<meta name="viewport", content="width=device-width, initial-scale=1.0">
 
-<style>
-    table, button{margin: auto;}
-    h1, h3, h5{text-align: center;}
-    div {text-align: center;}
-</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h1>✶° To-Do List °✶ :</h1>  
-<h3> Hi, {{ user }} !</h3>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<table>
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Description</th>
-    </tr>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hi, {{ user }}!</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'todolist:show_todolist' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'todolist:create_task' %}">Create Task</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'todolist:logout_user' %}">Logout</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h5{
+            text-align: center;
+            color: #000000;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        body{
+            background-image: url(https://cdn.dribbble.com/users/402090/screenshots/7972050/media/6dbbc85389e40707b39435357452fe27.gif);
+        }
+        .btn{
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(168, 235, 168);
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background: rgb(117, 174, 236);
+            border: 1px solid;
+            color: white;
+        }
+    </style>
+{% endblock meta %}
+
+{% block content%}
+<br>
+<h1> {{ user }}'s To-do List</h1>
+<br>
+
+<div class="grid-container">
+    {% for smth in list_todolist %}
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{smth.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{smth.date}}</h6>
+        <p class="card-text">{{smth.description}}</p>
+      </div>
+    </div>
+    {% endfor %}
+    </div>
+
     {% comment %} Add the data below this line {% endcomment %}
 
-    {% for smth in list_todolist %}
-        <tr>
-            <th>{{smth.date}}</th>
-            <th>{{smth.title}}</th>
-            <th>{{smth.description}}</th>
-        </tr>
-    {% endfor %}
-
-  </table>
-  <h5>Last login session: {{last_login}}</h5>
-  <button><a href="{% url 'todolist:create_task' %}">Create Task</a></button>
-  <button><a href="{% url 'todolist:logout_user' %}">Logout</a></button>
-
+    <br>
+    <h5>Last login session: {{last_login}}</h5>
  {% endblock content %}
