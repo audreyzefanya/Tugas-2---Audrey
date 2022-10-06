@@ -48,21 +48,21 @@
     <section class="Form my-5 mx-5">
         <div class="container">
                 <div class="col-lg-6 px-5 pt-5">
-                    <h1 class="font-weight-bold py-3">Login</h1>
-                    <h4>Sign into your account</h4>
+                    <h1 class="font-weight-bold py-3">Hello,</h1>
+                    <h4>please sign into your account</h4>
                     <br>
 
     <form method="POST" action="">
         {% csrf_token %}
             <tr>
                 <td>Username</td>
-                <td><input type="text" name="username" placeholder="Enter your username here." class="form-control"></td>
+                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
             </tr>
             <br>
                     
             <tr>
                 <td>Password</td>
-                <td><input type="password" name="password" placeholder="Enter your password here." class="form-control"></td>
+                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
             </tr>
             <br>
 
