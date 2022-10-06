@@ -10,7 +10,7 @@ Inline merupakan css yang harus di definisikan terlebih dahulu di tiap elemen ya
 - External, kekurangannya kurang efektif apabila hanya diterapkan sedikit. Kelebihannya adalah bisa digunakan untuk banyak file.
 
 # Apa Itu tag HTML5?
-Digunakan untuk menunjukkan elemen-elemen yang ada dalam suatu halaman website dengan tag <> dan </>. Kedua tag tersebut berisi inisial yang mewakili sebuah elemen halaman. Contohnya seperti <p>, <p> merepresentasi sebuah paragraf yang dapat langsung diketik pada sebuah text editor. Untuk memakainya dengan benar, kita perlu memasukkan teks di antara tag <p> dan </p>. Dengan demikian, kita dapat membuat sebuah paragraf.
+Digunakan untuk menunjukkan elemen-elemen yang ada dalam suatu halaman website dengan tag <> dan </>. Kedua tag tersebut berisi inisial yang mewakili sebuah elemen halaman. Contohnya seperti <.p.> (tanpa titik). <.p.> merepresentasi sebuah paragraf yang dapat langsung diketik pada sebuah text editor. Untuk memakainya dengan benar, kita perlu memasukkan teks di antara tag tersebut. Dengan demikian, kita dapat membuat sebuah paragraf.
 
 # Banyak Tipe CSS Selector
 Tipe CSS selector bergantung kepada _styling purpose_. CSS _selectors_ memilih elemen pada HTML bergantung pada masing-masing _id, class, type, attribute etc_.
