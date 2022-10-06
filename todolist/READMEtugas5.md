@@ -1,5 +1,5 @@
 # Link Deployment
-
+https://pbp-tugas2-audrey.herokuapp.com/todolist/
 
 # Perbedaan dari Inline, Internal dan External CSS
 Inline merupakan css yang harus di definisikan terlebih dahulu di tiap elemen yang kita buat di file html kita, internal merupakan kode yang dituliskan di dalam file html kita sendiri di bagian header. Sedangkan pada external, kita perlu import filenya terlebih dahulu dengan melakukan ```<link rel="stylesheet" href="tugas.css"/>``` yang diletakan setelah tag ```tag```.
