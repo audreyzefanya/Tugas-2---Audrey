@@ -9,7 +9,7 @@ Sebuah sistem objek yang saling berinteraksi dengan menggunakan mekanisme pesan 
 # Penerapan _Asynchronous Programming_ Pada AJAX
 _Asynchronous programming_ pada AJAX membuat website tidak memerlukan reload saat merubah data. AJAX akan mengumpulkan perintah yang akan dijalankan lalu mengirimnya ke server agar datanya diubah menjadi asynchronous. 
 
-# Cara Pnegimplementasian Checklist
+# Cara Pengimplementasian Checklist
 1. Mengaktifkan virtual environment dengan cara menjalankan ```python -m venv env dan source env/bin/activate``` di terminal.
 2. Membuat fungsi show_json pada views.py yang yang mengembalikan seluruh data _task_ dalam bentuk JSON.
 3. Routing path /todolist/json.
